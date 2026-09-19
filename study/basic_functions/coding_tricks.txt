@@ -1,3 +1,5 @@
 一键注释：选中多行 ctrl +/ 即可多行注释、多行取消注释
 
 导出环境：pip freeze > study/requirements.txt  
+
+复制当前行向下：shift +alt + 箭头下
