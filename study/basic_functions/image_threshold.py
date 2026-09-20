@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 img0=img=cv2.imread("study/source/lena512.bmp")
 
-ret,img1=cv2.threshold(img0,127,255,cv2.THRESH_BINARY)#超过127部分取255
+ret,img1=cv2.threshold(img0,127,255,cv2.THRESH_BINARY)#超过127部分取255,小于部分取0
 ret,img2=cv2.threshold(img0,127,255,cv2.THRESH_BINARY_INV)#上面的反转
 ret,img3=cv2.threshold(img0,127,255,cv2.THRESH_TRUNC)#大于阈值127部分设为127
 ret,img4=cv2.threshold(img0,127,255,cv2.THRESH_TOZERO)#大于阈值127部分不变，其他改为0
