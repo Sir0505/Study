@@ -1,0 +1,23 @@
+import cv2
+import matplotlib
+import numpy
+
+img=cv2.imread("study/source/lena512color.tiff")
+
+up=cv2.pyrUp(img)
+# print(up.shape)
+
+down=cv2.pyrDown(img)
+# print(down.shape)
+
+up_down=cv2.pyrDown(up)
+
+
+res=numpy.hstack((img,up_down))#经过高斯金字塔上采样和下采样处理后并不能直接得到原图像，原因是在经过高斯金字塔处理后图像失去了高频信号，使得图像不再那么锐利
+
+# L=img-up_down 拉普拉斯变化在处理时会保留残差，也就能完美还原图像
+cv2.imwrite("study/output/lena_pyramid.bmp",res)
+
+cv2.imshow("image",res)#“image”弹出窗口的命名
+cv2.waitKey(0)#等待时间，ms，0表示任意键终止
+cv2.destroyAllWindows()
