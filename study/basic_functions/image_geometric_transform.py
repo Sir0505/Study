@@ -31,24 +31,24 @@ rows, cols = img.shape[:2]
 # res = cv2.warpAffine(img, M, (cols,rows), borderValue=(255,255,255))
 
 # 图像仿射变换
-# pos1 = np.float32([[50, 50], [200, 50], [50, 200]])
-# pos2 = np.float32([[10, 100], [200, 50], [100, 250]])
-# M = cv2.getAffineTransform(pos1, pos2)   #需要三对点
-# print(M)
-# res = cv2.warpAffine(img, M, (2*cols, 2*rows))
+pos1 = np.float32([[50, 50], [200, 50], [50, 200]])
+pos2 = np.float32([[10, 100], [200, 50], [100, 250]])
+M = cv2.getAffineTransform(pos1, pos2)   #需要三对点
+print(M)
+res = cv2.warpAffine(img, M, (cols, rows))
 
 
 # 图像透视变换
 # 设置图像透视变换矩阵
-pos1 = np.float32([[114, 82], [287, 156],
-                   [8, 100], [143, 177]])
-pos2 = np.float32([[0, 0], [188, 0],
-                   [0, 262], [188, 262]])
-M = cv2.getPerspectiveTransform(pos1, pos2)
-print(M)
-res = cv2.warpPerspective(img, M, (2*cols,2*rows))
+# pos1 = np.float32([[114, 82], [287, 156],
+#                    [8, 100], [143, 177]])
+# pos2 = np.float32([[0, 0], [188, 0],
+#                    [0, 262], [188, 262]])
+# M = cv2.getPerspectiveTransform(pos1, pos2)
+# print(M)
+# res = cv2.warpPerspective(img, M, (cols,rows))
 
-
+cv2.imwrite("study/output/lena_geometric_transform.bmp",res)
 
 cv2.imshow('origin_picture', img)
 cv2.imshow('new_picture', res)

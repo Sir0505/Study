@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 # 获取统一测试图像
-test_img = img=cv2.imread("study/source/chessboard.png")
+test_img = img=cv2.imread("study/source/chessboard.png")#imread会出现静默报错（即不弹error，但下面的代码报错），记得检查文件路径
 # 转为灰度图（两种算法均需要灰度输入）
 test_gray = cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
 
@@ -56,6 +56,7 @@ plt.axis("off")
 plt.subplot(1, 2, 2)
 plt.imshow(cv2.cvtColor(test_shi_tomasi, cv2.COLOR_BGR2RGB))
 plt.title("test1.jpg - Shi-Tomasi 角点检测（绿色标记）")
+plt.savefig("study/output/corner_detect_result.png")
 plt.axis("off")
 plt.tight_layout()
 plt.show()

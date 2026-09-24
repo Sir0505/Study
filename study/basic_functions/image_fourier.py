@@ -21,12 +21,12 @@ rows,cols =img.shape
 crow,ccol=int(rows/2),int(cols/2)
 
 #低通滤波器
-# mask=np.zeros((rows,cols,2),np.uint8)
-# mask[crow-30:crow+30,ccol-30:ccol+30]=1
+mask=np.zeros((rows,cols,2),np.uint8)
+mask[crow-30:crow+30,ccol-30:ccol+30]=1
 
 #高通滤波器
-mask=np.ones((rows,cols,2),np.uint8)
-mask[crow-30:crow+30,ccol-30:ccol+30]=0
+# mask=np.ones((rows,cols,2),np.uint8)
+# mask[crow-30:crow+30,ccol-30:ccol+30]=0
 
 
 
@@ -38,7 +38,7 @@ img_back=cv2.idft(f_ishift)
 img_back=cv2.magnitude(img_back[:,:,0],img_back[:,:,1])
 img_back = cv2.normalize(img_back, None, 0, 255, cv2.NORM_MINMAX)
 img_back = np.uint8(img_back)
-cv2.imwrite("study/output/lena_high_pass.bmp",img_back)
+cv2.imwrite("study/output/lena_low_pass.bmp",img_back)
 
 
 plt.subplot(121),plt.imshow(img,cmap='gray')
