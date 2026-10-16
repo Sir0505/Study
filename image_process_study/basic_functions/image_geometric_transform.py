@@ -3,7 +3,7 @@
 import cv2
 import numpy as np
 
-img=cv2.imread("study/source/lena512.bmp")
+img=cv2.imread("image_process_study/source/lena512.bmp")
 
 rows, cols = img.shape[:2]
 
@@ -48,7 +48,7 @@ res = cv2.warpAffine(img, M, (cols, rows))
 # print(M)
 # res = cv2.warpPerspective(img, M, (cols,rows))
 
-cv2.imwrite("study/output/lena_geometric_transform.bmp",res)
+cv2.imwrite("image_process_study/output/lena_geometric_transform.bmp",res)
 
 cv2.imshow('origin_picture', img)
 cv2.imshow('new_picture', res)

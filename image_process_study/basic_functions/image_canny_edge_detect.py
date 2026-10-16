@@ -8,13 +8,13 @@ import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
 
-img=cv2.imread("study/source/lena512.bmp")
+img=cv2.imread("image_process_study/source/lena512.bmp")
 
 img1=cv2.Canny(img,80,150)
 img2=cv2.Canny(img,50,100)
 
 res=np.hstack((img1,img2))
-cv2.imwrite("study/output/lena_canny_edge_detect.bmp",res)
+cv2.imwrite("image_process_study/output/lena_canny_edge_detect.bmp",res)
 
 
 cv2.imshow("image",res)#“image”弹出窗口的命名

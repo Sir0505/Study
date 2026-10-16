@@ -37,8 +37,8 @@ def add_gaussian_noise(image, mean=0, sigma=25):
     return noisy_image
 
 # === 运行示例 ===
-img = cv2.imread('study/source/lena512.bmp') 
+img = cv2.imread('image_process_study/source/lena512.bmp') 
 result_img = add_gaussian_noise(img, mean=0, sigma=50)
-# cv2.imwrite("study/output/lena_gaussian_noise.bmp", result_img)
+# cv2.imwrite("image_process_study/output/lena_gaussian_noise.bmp", result_img)
 cv2.imshow('Noisy', result_img) 
 cv2.waitKey(0)

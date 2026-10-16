@@ -3,7 +3,7 @@ import matplotlib
 import numpy
 import matplotlib.pyplot as plt
 
-img0=img=cv2.imread("study/source/lena512.bmp")
+img0=img=cv2.imread("image_process_study/source/lena512.bmp")
 
 ret,img1=cv2.threshold(img0,127,255,cv2.THRESH_BINARY)#超过127部分取255,小于部分取0
 ret,img2=cv2.threshold(img0,127,255,cv2.THRESH_BINARY_INV)#上面的反转
@@ -20,5 +20,5 @@ for i in range(6):
     plt.xticks([]),plt.yticks([])
 
 
-plt.savefig("study/output/threshold_result.png")
+plt.savefig("image_process_study/output/threshold_result.png")
 plt.show()#plt.show()后会关闭画窗，save要在show之前

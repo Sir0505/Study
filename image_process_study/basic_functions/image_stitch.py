@@ -11,8 +11,8 @@ def crop_black_edges(image):
     return image[y:y+h, x:x+w]
 
 
-image1 = cv2.imread("study/source/left_01.png")
-image2 = cv2.imread("study/source/right_01.png")
+image1 = cv2.imread("image_process_study/source/left_01.png")
+image2 = cv2.imread("image_process_study/source/right_01.png")
 
 gray1 = cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(image2, cv2.COLOR_BGR2GRAY)
@@ -91,7 +91,7 @@ optimized_panorama = crop_black_edges(panorama)
 
 optimized_panorama =optimized_panorama[195:570,0:1100]
 
-cv2.imwrite("study/output/image_stich.bmp",optimized_panorama)
+cv2.imwrite("image_process_study/output/image_stich.bmp",optimized_panorama)
 
 plt.figure(figsize=(15, 7))
 plt.imshow(cv2.cvtColor(optimized_panorama, cv2.COLOR_BGR2RGB))

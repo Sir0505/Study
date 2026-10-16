@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-img=cv2.imread("study/source/lena512.bmp",0)
+img=cv2.imread("image_process_study/source/lena512.bmp",0)
 
 img_float32=np.float32(img)
 
@@ -38,7 +38,7 @@ img_back=cv2.idft(f_ishift)
 img_back=cv2.magnitude(img_back[:,:,0],img_back[:,:,1])
 img_back = cv2.normalize(img_back, None, 0, 255, cv2.NORM_MINMAX)
 img_back = np.uint8(img_back)
-cv2.imwrite("study/output/lena_low_pass.bmp",img_back)
+cv2.imwrite("image_process_study/output/lena_low_pass.bmp",img_back)
 
 
 plt.subplot(121),plt.imshow(img,cmap='gray')

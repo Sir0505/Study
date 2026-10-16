@@ -3,8 +3,8 @@ import matplotlib
 import numpy
 import matplotlib.pyplot as plt
 
-img=cv2.imread("study/source/lena512.bmp")
-template=cv2.imread("study/source/lena_head.bmp")
+img=cv2.imread("image_process_study/source/lena512.bmp")
+template=cv2.imread("image_process_study/source/lena_head.bmp")
 
 # TM_SQDIFF:计算平方不同，计算值越小越相关
 # TM_CCORR:计算相关性，计算出来的值越大越相关

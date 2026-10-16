@@ -3,7 +3,7 @@ import matplotlib
 import numpy
 import matplotlib.pyplot as plt
 
-img=cv2.imread("study/source/lena512.bmp")
+img=cv2.imread("image_process_study/source/lena512.bmp")
 
 
 sobelx=cv2.Sobel(img,-1,1,0,ksize=3)
@@ -22,7 +22,7 @@ laplacian=cv2.Laplacian(img,-1)
 laplacian=cv2.convertScaleAbs(laplacian)
 
 res=numpy.hstack((sobelxy,scharrxy,laplacian))
-cv2.imwrite("study/output/lena_operator_process.bmp",res)
+cv2.imwrite("image_process_study/output/lena_operator_process.bmp",res)
 
 cv2.imshow("image",res)#“image”弹出窗口的命名
 cv2.waitKey(0)#等待时间，ms，0表示任意键终止

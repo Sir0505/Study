@@ -7,7 +7,7 @@ import os
 
 #../为返回上级目录下 ./为本级目录下
 #img=cv2.imread("study/source/lena512.bmp")
-img=cv2.imread("study/source/lena512.bmp",cv2.IMREAD_GRAYSCALE)#读取灰度图
+img=cv2.imread("image_process_study/source/lena512.bmp",cv2.IMREAD_GRAYSCALE)#读取灰度图
 
 #print出来 有几个中括号代表有几维的数据
 #[             ← 第 1 层：axis 0（有几"块"）

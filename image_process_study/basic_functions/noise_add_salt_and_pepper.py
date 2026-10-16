@@ -48,8 +48,8 @@ def add_salt_and_pepper_noise(image, noise_ratio=0.05):
     return noisy_image
 
 # === 运行示例 ===
-img = cv2.imread('study/source/lena512color.tiff') 
+img = cv2.imread('image_process_study/source/lena512color.tiff') 
 result_img = add_salt_and_pepper_noise(img, noise_ratio=0.05)
-# cv2.imwrite("study/output/lenacolor_salt_and_pepper_noise.bmp",result_img)
+# cv2.imwrite("image_process_study/output/lenacolor_salt_and_pepper_noise.bmp",result_img)
 cv2.imshow('Noisy', result_img) 
 cv2.waitKey(0)

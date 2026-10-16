@@ -4,8 +4,8 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
-img1 = cv2.imread("study/source/lena_geometric_transform.bmp",cv2.IMREAD_GRAYSCALE)
-img2 = cv2.imread("study/source/lena512.bmp",cv2.IMREAD_GRAYSCALE)
+img1 = cv2.imread("image_process_study/source/lena_geometric_transform.bmp",cv2.IMREAD_GRAYSCALE)
+img2 = cv2.imread("image_process_study/source/lena512.bmp",cv2.IMREAD_GRAYSCALE)
 
 #实例化的sift函数
 sift = cv2.xfeatures2d.SIFT_create()
@@ -43,7 +43,7 @@ for m,n in matches:
         good.append([m])
 #img5 = cv2.drawMatchesKnn(img1,kp1,img2,kp2,matches,None,flags=2)
 img5 = cv2.drawMatchesKnn(img1,kp1,img2,kp2,good,None,flags=2)
-cv2.imwrite("study/output/lena_sift_feature_match.bmp",img5)
+cv2.imwrite("image_process_study/output/lena_sift_feature_match.bmp",img5)
 cv2.imshow("BFmatch", img5)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

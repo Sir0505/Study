@@ -3,7 +3,7 @@ import matplotlib
 import numpy
 import matplotlib.pyplot as plt
 
-img=cv2.imread("study/source/lena512color.tiff")
+img=cv2.imread("image_process_study/source/lena512color.tiff")
 
 # cv2.imread 读到 img，它是 BGR
 # plt.imshow，matplotlib 当成 RGB 来显示
