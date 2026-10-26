@@ -1,0 +1,43 @@
+absl-py==2.3.1
+brotlicffi @ file:///C:/miniconda3/conda-bld/brotlicffi_1761745218276/work
+certifi @ file:///C:/miniconda3/conda-bld/certifi_1759786080784/work/certifi
+cffi @ file:///C:/miniconda3/conda-bld/cffi_1760098049787/work
+charset-normalizer @ file:///C:/miniconda3/conda-bld/charset-normalizer_1761744977248/work
+filelock @ file:///C:/b/abs_758187j281/croot/filelock_1744281404850/work
+gmpy2 @ file:///C:/b/abs_d8ki0o0h97/croot/gmpy2_1738085498525/work
+grpcio==1.80.0
+idna @ file:///C:/miniconda3/conda-bld/idna_1761912043328/work
+importlib_metadata==8.7.1
+Jinja2 @ file:///C:/b/abs_920kup4e6u/croot/jinja2_1741711580669/work
+Markdown==3.9
+MarkupSafe @ file:///C:/b/abs_a0ma7ge0jc/croot/markupsafe_1738584052792/work
+mkl-service==2.4.0
+mkl_fft @ file:///C:/Users/dev-admin/mkl/mkl_fft_1730823082242/work
+mkl_random @ file:///C:/Users/dev-admin/mkl/mkl_random_1730822522280/work
+mpmath @ file:///C:/b/abs_7833jrbiox/croot/mpmath_1690848321154/work
+networkx @ file:///C:/b/abs_3bxnu56g9d/croot/networkx_1717597507456/work
+numpy @ file:///C:/b/abs_0123vcxhf8/croot/numpy_and_numpy_base_1725470331966/work/dist/numpy-2.0.1-cp39-cp39-win_amd64.whl#sha256=afd4c53d4b548db7b600782fd4368ad419de0533ac199a031101a0b99df7eaf7
+opencv-python==5.0.0.93
+packaging==26.3
+pandas==2.3.3
+pillow==11.3.0
+protobuf==6.33.6
+pycparser @ file:///C:/miniconda3/conda-bld/pycparser_1757496061107/work
+PySocks @ file:///C:/miniconda3/conda-bld/pysocks_1761753077861/work
+python-dateutil==3.0.0
+pytz==2026.5
+PyYAML @ file:///C:/b/abs_14xkfs39bx/croot/pyyaml_1728657968772/work
+requests @ file:///C:/b/abs_f53smfvswb/croot/requests_1756709376206/work
+six==1.17.0
+sympy @ file:///C:/b/abs_f1v7nwa6vp/croot/sympy_1756713483242/work
+tensorboard==2.21.0
+tensorboard-data-server==0.7.2
+torch==2.4.1
+torchaudio==2.4.1
+torchvision==0.19.1
+typing_extensions @ file:///C:/b/abs_ecq8gc0vbm/croot/typing_extensions_1756281142218/work
+tzdata==2026.5
+urllib3 @ file:///C:/b/abs_393g1ayee_/croot/urllib3_1750775481226/work
+Werkzeug==3.1.9
+win_inet_pton @ file:///C:/miniconda3/conda-bld/win_inet_pton_1761746274727/work
+zipp==3.23.1
